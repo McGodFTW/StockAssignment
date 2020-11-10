@@ -36,7 +36,7 @@ public class LoginMain {
 				UserMenu.userMenu();
 				loop = false;
 				//Call 2FA/OTP Method
-				//OTP.sendOTP();
+				OTP.sendOTP();
 				
 				
 			} else {
