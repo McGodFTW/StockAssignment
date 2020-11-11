@@ -170,7 +170,7 @@ public class AMD extends Stocks implements TID {
 			if(AccountNumbers.AMDShares >= quantity) {
 				
 				AccountNumbers.balance += cost;
-				AccountNumbers.AMDShares--;
+				AccountNumbers.AMDShares -= quantity;
 				AccountNumbers.ownedStocks--;
 				type = "Sold: ";
 				transaction();

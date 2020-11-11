@@ -170,7 +170,7 @@ public class NVDA extends Stocks implements TID {
 			if(AccountNumbers.NVDAShares >= quantity) {
 				
 				AccountNumbers.balance += cost;
-				AccountNumbers.NVDAShares--;
+				AccountNumbers.NVDAShares -= quantity;
 				AccountNumbers.ownedStocks--;
 				type = "Sold: ";
 				transaction();

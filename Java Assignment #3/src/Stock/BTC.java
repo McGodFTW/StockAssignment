@@ -170,7 +170,7 @@ public class BTC extends Stocks implements TID {
 			if(AccountNumbers.BTC >= quantity) {
 				
 				AccountNumbers.balance += cost;
-				AccountNumbers.BTC--;
+				AccountNumbers.BTC -= quantity;
 				AccountNumbers.ownedStocks--;
 				type = "Sold: ";
 				transaction();

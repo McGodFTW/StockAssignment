@@ -170,7 +170,7 @@ public class APHA extends Stocks implements TID {
 			if(AccountNumbers.APHAShares >= quantity) {
 				
 				AccountNumbers.balance += cost;
-				AccountNumbers.APHAShares--;
+				AccountNumbers.APHAShares -= quantity;
 				AccountNumbers.ownedStocks--;
 				type = "Sold: ";
 				transaction();

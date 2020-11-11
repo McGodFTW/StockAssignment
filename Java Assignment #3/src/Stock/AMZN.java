@@ -170,7 +170,7 @@ public class AMZN extends Stocks implements TID {
 			if(AccountNumbers.AMZNShares >= quantity) {
 				
 				AccountNumbers.balance += cost;
-				AccountNumbers.AMZNShares--;
+				AccountNumbers.AMZNShares -= quantity;
 				AccountNumbers.ownedStocks--;
 				type = "Sold: ";
 				transaction();

@@ -170,7 +170,7 @@ public class TSLA extends Stocks implements TID {
 			if(AccountNumbers.TSLAShares >= quantity) {
 				
 				AccountNumbers.balance += cost;
-				AccountNumbers.TSLAShares--;
+				AccountNumbers.TSLAShares -= quantity;
 				AccountNumbers.ownedStocks--;
 				type = "Sold: ";
 				transaction();

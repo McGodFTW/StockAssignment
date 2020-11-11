@@ -170,7 +170,7 @@ public class ENB extends Stocks implements TID {
 			if(AccountNumbers.ENBShares >= quantity) {
 				
 				AccountNumbers.balance += cost;
-				AccountNumbers.ENBShares--;
+				AccountNumbers.ENBShares -= quantity;
 				AccountNumbers.ownedStocks--;
 				type = "Sold: ";
 				transaction();

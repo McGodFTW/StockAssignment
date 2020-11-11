@@ -170,7 +170,7 @@ public class KO extends Stocks implements TID {
 			if(AccountNumbers.KOShares >= quantity) {
 				
 				AccountNumbers.balance += cost;
-				AccountNumbers.KOShares--;
+				AccountNumbers.KOShares -= quantity;
 				AccountNumbers.ownedStocks--;
 				type = "Sold: ";
 				transaction();

@@ -170,7 +170,7 @@ public class TD extends Stocks implements TID {
 			if(AccountNumbers.TDShares >= quantity) {
 				
 				AccountNumbers.balance += cost;
-				AccountNumbers.TDShares--;
+				AccountNumbers.TDShares -= quantity;
 				AccountNumbers.ownedStocks--;
 				type = "Sold: ";
 				transaction();

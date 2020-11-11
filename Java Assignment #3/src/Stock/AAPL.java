@@ -170,7 +170,7 @@ public class AAPL extends Stocks implements TID {
 			if(AccountNumbers.AAPLShares >= quantity) {
 				
 				AccountNumbers.balance += cost;
-				AccountNumbers.AAPLShares--;
+				AccountNumbers.AAPLShares -= quantity;
 				AccountNumbers.ownedStocks--;
 				type = "Sold: ";
 				transaction();
