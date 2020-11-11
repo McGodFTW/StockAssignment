@@ -33,10 +33,10 @@ public class LoginMain {
 			//Check if the username and password is right
 			if(uName.equals(checkUName) && password.equals(checkPW)) {
 				
-				UserMenu.userMenu();
+				OTP.sendOTP();
 				loop = false;
 				//Call 2FA/OTP Method
-				OTP.sendOTP();
+				
 				
 				
 			} else {
