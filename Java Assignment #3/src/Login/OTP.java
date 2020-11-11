@@ -121,7 +121,6 @@ public class OTP {
 			} else {
 				
 				System.out.println("ERROR >> Your password was incorrect! You have " + chances + " more tries left");
-				System.out.println(otp + "\t" + enteredOTP);
 				
 			}
 			
